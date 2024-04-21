@@ -50,7 +50,7 @@ export function Navbar() {
             
         </div>
       </div>
-      {toggle && <div className="w-full text-center text-gray-700 h-[30vh] text-2xl font-semibold space-y-2 bg-customCream z-10 absolute">
+      {toggle && <div className="w-full text-center text-gray-700 pb-8 text-xl font-semibold space-y-2 bg-customCream z-10 absolute">
            <Link to="/" className="cursor-pointer">
             <h1 onClick={()=>setToggle(false)}>HOME</h1>
           </Link>
@@ -66,7 +66,7 @@ export function Navbar() {
           </Link>
           <Link to="/favourites" className="relative cursor-pointer">
             <h1 onClick={()=>setToggle(false)}>FAVOURITES</h1>
-            {favRestraunts.length>0 && <h1 className="bg-red-600 absolute bottom-4 left-16 rounded-full w-5 h-5 flex text-white justify-center items-center text-[14px]">{favRestraunts.length}</h1> }
+            {favRestraunts.length>0 && <h1 className="bg-red-600 absolute bottom-4 left-12 rounded-full w-5 h-5 flex text-white justify-center items-center text-[14px]">{favRestraunts.length}</h1> }
           </Link>
         </div>}
     </>

@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { favouriteRestrauntsAtom } from "../atom";
 import { restaurants } from "../Util/restrauntData";
+import { toast } from "react-toastify";
+
 export function RestrauntList({ value, id }) {
   const [FavRestraunts, setFavRestraunts] = useRecoilState(
     favouriteRestrauntsAtom
@@ -25,8 +27,28 @@ export function RestrauntList({ value, id }) {
   function clickHandler(id) {
     setLike((prev) => !prev);
     if (!like) {
+      toast.success('ADDED SUCCESSFULLY', {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
       setFavRestraunts((prev) => [...prev, Details]);
     } else {
+      toast.success('REMOVED SUCCESSFULLY', {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
       let itemExists = FavRestraunts.find((value) => value.id == id);
       if (itemExists) {
         let filteredArray = FavRestraunts.filter((value) => value.id != id);

@@ -1,7 +1,7 @@
 export function Footer(){
     return(
         <div className=" w-full bg-black py-12">
-              <div className="flex justify-around text-[12px] w-6/12 mx-auto text-white space-x-2">
+              <div className="flex justify-around text-[12px] sm:w-6/12 w-9/12 mx-auto text-white space-x-2">
             <div className="flex flex-col">
                 <p>Hotel Rooms</p>
                 <p>Restraunt Booking</p>

@@ -13,7 +13,7 @@ export function Menu({Details}){
         <>
          <div className="mt-3">
             <h1 className="text-xl font-semibold">MENU</h1>
-            <div className="sm:flex font-semibold mt-3 sm:space-x-2">
+            <div className="sm:flex pr-2 sm:pr-0 font-semibold mt-3 sm:space-x-2">
               <h1
                 onClick={(e) => {
                   setType("all");

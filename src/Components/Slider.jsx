@@ -25,7 +25,7 @@ export function Slider(){
       
     return(
         <div className="mt-3">
-            <Carousel responsive={responsive} removeArrowOnDeviceType={["mobile","tablet","desktop"]} showDots={false} infinite={true} transitionDuration={500} autoPlaySpeed={3000} autoPlay={false}>
+            <Carousel responsive={responsive} removeArrowOnDeviceType={["mobile","tablet","desktop"]} showDots={false} infinite={true} transitionDuration={500} autoPlaySpeed={3000} autoPlay={true}>
                 
                 <img className="w-11/12 mx-auto" src={img1} alt="NO IMAGE FOUND" />
                 <img className="w-11/12 mx-auto" src={img2} alt="NO IMAGE FOUND" />
